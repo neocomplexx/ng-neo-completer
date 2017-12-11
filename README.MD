@@ -33,6 +33,24 @@ import { NeoCompleterModule } from 'ng-neo-completer';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// Import in child modules for use components
+import { NeoCompleterModule } from 'ng-neo-completer';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+
+    // Specify your library as an import
+    NeoCompleterModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class ChildModule { }
 ```
 
 ## License
