@@ -1,0 +1,29 @@
+{
+  "name": "ng-neo-completer",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neocomplexx/ng-neo-completer"
+  },
+  "author": {
+    "name": "Sebastian Larrieu",
+    "email": "slarriue@neocomplexx.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neocomplexx/ng-neo-completer/issues"
+  },
+  "main": "ng-neo-completer.umd.js",
+  "module": "ng-neo-completer.js",
+  "jsnext:main": "ng-neo-completer.js",
+  "typings": "ng-neo-completer.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^5.0.5",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
