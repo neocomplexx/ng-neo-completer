@@ -1,0 +1,3612 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ng-neo-completer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ng-neo-completer</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">ng-neo-completer</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                        <a href="../license.html"
+                                    >
+                                        <span class="fa fa-file-text-o"></span>LICENSE
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/NeoCompleterModule.html" >NeoCompleterModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/CompleterCmp.html"  data-type="entity-link" class="active" >CompleterCmp</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/CompleterListItemCmp.html" >CompleterListItemCmp</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/CtrCompleter.html" >CtrCompleter</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/CtrDropdown.html" >CtrDropdown</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/CtrInput.html" >CtrInput</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/CtrList.html" >CtrList</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/CtrRow.html" >CtrRow</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/CompleterBaseData.html" >CompleterBaseData</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/CtrListContext.html" >CtrListContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/CtrRowItem.html" >CtrRowItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/NeoCompleterService.html" >NeoCompleterService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/RemoteData.html" >RemoteData</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/CompleterService.html" >CompleterService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/LocalData.html" >LocalData</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/CompleterData.html" >CompleterData</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/CompleterDropdown.html" >CompleterDropdown</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/CompleterItem.html" >CompleterItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/CompleterList.html" >CompleterList</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/CtrRowElement.html" >CtrRowElement</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/MatchPart.html" >MatchPart</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/functions.html" data-type="entity-link" >Functions</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">ng-neo-completer</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                               <a href="../license.html"
+                                           >
+                                               <span class="fa fa-file-text-o"></span>LICENSE
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/NeoCompleterModule.html" >NeoCompleterModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/CompleterCmp.html"  data-type="entity-link" class="active" >CompleterCmp</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/CompleterListItemCmp.html" >CompleterListItemCmp</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/CtrCompleter.html" >CtrCompleter</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/CtrDropdown.html" >CtrDropdown</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/CtrInput.html" >CtrInput</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/CtrList.html" >CtrList</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/CtrRow.html" >CtrRow</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/CompleterBaseData.html" >CompleterBaseData</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/CtrListContext.html" >CtrListContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/CtrRowItem.html" >CtrRowItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/NeoCompleterService.html" >NeoCompleterService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/RemoteData.html" >RemoteData</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/CompleterService.html" >CompleterService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/LocalData.html" >LocalData</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/CompleterData.html" >CompleterData</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/CompleterDropdown.html" >CompleterDropdown</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/CompleterItem.html" >CompleterItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/CompleterList.html" >CompleterList</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/CtrRowElement.html" >CtrRowElement</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/MatchPart.html" >MatchPart</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/functions.html" data-type="entity-link" >Functions</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CompleterCmp</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/components/completer-cmp.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                <code><a href="https://angular.io/api/forms/ControlValueAccessor" target="_blank" >ControlValueAccessor</a></code>
+                <code><a href="https://angular.io/api/core/AfterViewChecked" target="_blank" >AfterViewChecked</a></code>
+                <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                    <code>
+                        COMPLETER_CONTROL_VALUE_ACCESSOR
+                    </code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>ng2-completer</code></td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">styles</td>
+                <td class="col-md-9"><code>
+    .completer-dropdown {
+        border-color: #ececec;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 2px;
+        width: 250px;
+        padding: 6px;
+        cursor: pointer;
+        z-index: 9999;
+        position: absolute;
+        margin-top: -6px;
+        background-color: #ffffff;
+    }
+
+    .completer-row {
+        padding: 5px;
+        color: #000000;
+        margin-bottom: 4px;
+        clear: both;
+        display: inline-block;
+        width: 103%;
+    }
+
+    .completer-selected-row {
+        background-color: lightblue;
+        color: #ffffff;
+    }
+
+    .completer-description {
+        font-size: 14px;
+    }
+
+    .completer-image-default {
+        width: 16px;
+        height: 16px;
+        background-image: url(&quot;demo/res/img/default.png&quot;);
+    }
+
+    .completer-image-holder {
+        float: left;
+        width: 10%;
+    }
+    .completer-item-text-image {
+        float: right;
+        width: 90%;
+    }
+    </code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">template</td>
+                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;completer-holder&quot; ctrCompleter&gt;
+    &lt;input #ctrInput [attr.id]&#x3D;&quot;inputId.length &gt; 0 ? inputId : null&quot; type&#x3D;&quot;search&quot; class&#x3D;&quot;completer-input&quot; ctrInput [ngClass]&#x3D;&quot;inputClass&quot;
+        [(ngModel)]&#x3D;&quot;searchStr&quot; (ngModelChange)&#x3D;&quot;onChange($event)&quot; [attr.name]&#x3D;&quot;inputName&quot; [placeholder]&#x3D;&quot;placeholder&quot;
+        [attr.maxlength]&#x3D;&quot;maxChars&quot; [tabindex]&#x3D;&quot;fieldTabindex&quot; [disabled]&#x3D;&quot;disableInput&quot;
+        [clearSelected]&#x3D;&quot;clearSelected&quot; [clearUnselected]&#x3D;&quot;clearUnselected&quot;
+        [overrideSuggested]&#x3D;&quot;overrideSuggested&quot; [openOnFocus]&#x3D;&quot;openOnFocus&quot; [fillHighlighted]&#x3D;&quot;fillHighlighted&quot;
+        [openOnClick]&#x3D;&quot;openOnClick&quot; [selectOnClick]&#x3D;&quot;selectOnClick&quot;
+        (blur)&#x3D;&quot;onBlur()&quot; (focus)&#x3D;&quot;onFocus()&quot; (keyup)&#x3D;&quot;onKeyup($event)&quot; (keydown)&#x3D;&quot;onKeydown($event)&quot; (click)&#x3D;&quot;onClick($event)&quot;
+        autocomplete&#x3D;&quot;off&quot; autocorrect&#x3D;&quot;off&quot; autocapitalize&#x3D;&quot;off&quot; /&gt;
+
+    &lt;div class&#x3D;&quot;completer-dropdown-holder&quot;
+        *ctrList&#x3D;&quot;dataService;
+            minSearchLength: minSearchLength;
+            pause: pause;
+            autoMatch: autoMatch;
+            initialValue: initialValue;
+            autoHighlight: autoHighlight;
+            displaySearching: displaySearching;
+            let items &#x3D; results;
+            let searchActive &#x3D; searching;
+            let isInitialized &#x3D; searchInitialized;
+            let isOpen &#x3D; isOpen;&quot;&gt;
+        &lt;div class&#x3D;&quot;completer-dropdown&quot; ctrDropdown *ngIf&#x3D;&quot;isInitialized &amp;&amp; isOpen &amp;&amp; (( items?.length &gt; 0|| (displayNoResults &amp;&amp; !searchActive)) || (searchActive &amp;&amp; displaySearching))&quot;&gt;
+            &lt;div *ngIf&#x3D;&quot;searchActive &amp;&amp; displaySearching&quot; class&#x3D;&quot;completer-searching&quot;&gt;{{_textSearching}}&lt;/div&gt;
+            &lt;div *ngIf&#x3D;&quot;!searchActive &amp;&amp; (!items || items?.length &#x3D;&#x3D;&#x3D; 0)&quot; class&#x3D;&quot;completer-no-results&quot;&gt;{{_textNoResults}}&lt;/div&gt;
+            &lt;div class&#x3D;&quot;completer-row-wrapper&quot; *ngFor&#x3D;&quot;let item of items; let rowIndex&#x3D;index&quot;&gt;
+                &lt;div class&#x3D;&quot;completer-row&quot; [ctrRow]&#x3D;&quot;rowIndex&quot; [dataItem]&#x3D;&quot;item&quot;&gt;
+                    &lt;div *ngIf&#x3D;&quot;item.image || item.image &#x3D;&#x3D;&#x3D; &#x27;&#x27;&quot; class&#x3D;&quot;completer-image-holder&quot;&gt;
+                        &lt;img *ngIf&#x3D;&quot;item.image !&#x3D; &#x27;&#x27;&quot; src&#x3D;&quot;{{item.image}}&quot; class&#x3D;&quot;completer-image&quot; /&gt;
+                        &lt;div *ngIf&#x3D;&quot;item.image &#x3D;&#x3D;&#x3D; &#x27;&#x27;&quot; class&#x3D;&quot;completer-image-default&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;completer-item-text&quot; [ngClass]&#x3D;&quot;{&#x27;completer-item-text-image&#x27;: item.image || item.image &#x3D;&#x3D;&#x3D; &#x27;&#x27; }&quot;&gt;
+                        &lt;completer-list-item class&#x3D;&quot;completer-title&quot; [text]&#x3D;&quot;item.title&quot; [matchClass]&#x3D;&quot;matchClass&quot; [searchStr]&#x3D;&quot;searchStr&quot; [type]&#x3D;&quot;&#x27;title&#x27;&quot;&gt;&lt;/completer-list-item&gt;
+                        &lt;completer-list-item *ngIf&#x3D;&quot;item.description &amp;&amp; item.description !&#x3D; &#x27;&#x27;&quot; class&#x3D;&quot;completer-description&quot; [text]&#x3D;&quot;item.description&quot;
+                            [matchClass]&#x3D;&quot;matchClass&quot; [searchStr]&#x3D;&quot;searchStr&quot; [type]&#x3D;&quot;&#x27;description&#x27;&quot;&gt;
+                        &lt;/completer-list-item&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></td>
+            </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_focus">_focus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_onChangeCallback">_onChangeCallback</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_onTouchedCallback">_onTouchedCallback</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_open">_open</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_textNoResults">_textNoResults</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_textSearching">_textSearching</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#completer">completer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#control">control</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ctrInput">ctrInput</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#displayNoResults">displayNoResults</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#displaySearching">displaySearching</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#searchStr">searchStr</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#blur">blur</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#close">close</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#focus">focus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isOpen">isOpen</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngAfterViewChecked">ngAfterViewChecked</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onBlur">onBlur</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onChange">onChange</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onClick">onClick</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onFocus">onFocus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onKeydown">onKeydown</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onKeyup">onKeyup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onTouched">onTouched</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#open">open</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#registerOnChange">registerOnChange</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#registerOnTouched">registerOnTouched</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setDisabledState">setDisabledState</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#writeValue">writeValue</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#autofocus">autofocus</a>
+                            </li>
+                            <li>
+                                <a href="#autoHighlight">autoHighlight</a>
+                            </li>
+                            <li>
+                                <a href="#autoMatch">autoMatch</a>
+                            </li>
+                            <li>
+                                <a href="#clearSelected">clearSelected</a>
+                            </li>
+                            <li>
+                                <a href="#clearUnselected">clearUnselected</a>
+                            </li>
+                            <li>
+                                <a href="#dataService">dataService</a>
+                            </li>
+                            <li>
+                                <a href="#datasource">datasource</a>
+                            </li>
+                            <li>
+                                <a href="#disableInput">disableInput</a>
+                            </li>
+                            <li>
+                                <a href="#fieldTabindex">fieldTabindex</a>
+                            </li>
+                            <li>
+                                <a href="#fillHighlighted">fillHighlighted</a>
+                            </li>
+                            <li>
+                                <a href="#initialValue">initialValue</a>
+                            </li>
+                            <li>
+                                <a href="#inputClass">inputClass</a>
+                            </li>
+                            <li>
+                                <a href="#inputId">inputId</a>
+                            </li>
+                            <li>
+                                <a href="#inputName">inputName</a>
+                            </li>
+                            <li>
+                                <a href="#matchClass">matchClass</a>
+                            </li>
+                            <li>
+                                <a href="#maxChars">maxChars</a>
+                            </li>
+                            <li>
+                                <a href="#minSearchLength">minSearchLength</a>
+                            </li>
+                            <li>
+                                <a href="#openOnClick">openOnClick</a>
+                            </li>
+                            <li>
+                                <a href="#openOnFocus">openOnFocus</a>
+                            </li>
+                            <li>
+                                <a href="#overrideSuggested">overrideSuggested</a>
+                            </li>
+                            <li>
+                                <a href="#pause">pause</a>
+                            </li>
+                            <li>
+                                <a href="#placeholder">placeholder</a>
+                            </li>
+                            <li>
+                                <a href="#selectOnClick">selectOnClick</a>
+                            </li>
+                            <li>
+                                <a href="#textNoResults">textNoResults</a>
+                            </li>
+                            <li>
+                                <a href="#textSearching">textSearching</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#blur">blur</a>
+                            </li>
+                            <li>
+                                <a href="#click">click</a>
+                            </li>
+                            <li>
+                                <a href="#focus">focus</a>
+                            </li>
+                            <li>
+                                <a href="#highlighted">highlighted</a>
+                            </li>
+                            <li>
+                                <a href="#keydown">keydown</a>
+                            </li>
+                            <li>
+                                <a href="#keyup">keyup</a>
+                            </li>
+                            <li>
+                                <a href="#opened">opened</a>
+                            </li>
+                            <li>
+                                <a href="#selected">selected</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Accessors</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#value">value</a>
+                            </li>
+                            <li>
+                                <a href="#datasource">datasource</a>
+                            </li>
+                            <li>
+                                <a href="#textNoResults">textNoResults</a>
+                            </li>
+                            <li>
+                                <a href="#textSearching">textSearching</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor(completerService: <a href="../injectables/CompleterService.html">CompleterService</a>, cdr: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>)</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/components/completer-cmp.ts:165</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div>
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>completerService</td>
+                                                      <td>
+                                                                <code><a href="../injectables/CompleterService.html" target="_self" >CompleterService</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>cdr</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="inputs">Inputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="autofocus"></a>
+                            <code>autofocus</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/components/completer-cmp.ts:136</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="autoHighlight"></a>
+                            <code>autoHighlight</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">src/components/completer-cmp.ts:141</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="autoMatch"></a>
+                            <code>autoMatch</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="133" class="link-to-prism">src/components/completer-cmp.ts:133</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="clearSelected"></a>
+                            <code>clearSelected</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/components/completer-cmp.ts:127</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="clearUnselected"></a>
+                            <code>clearUnselected</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/components/completer-cmp.ts:128</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="dataService"></a>
+                            <code>dataService</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="../interfaces/CompleterData.html" target="_self" >CompleterData</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/components/completer-cmp.ts:120</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="datasource"></a>
+                            <code>datasource</code>
+                        </td>
+                        <td class="col-md-10">
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="218" class="link-to-prism">src/components/completer-cmp.ts:218</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="disableInput"></a>
+                            <code>disableInput</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/components/completer-cmp.ts:134</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="fieldTabindex"></a>
+                            <code>fieldTabindex</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="132" class="link-to-prism">src/components/completer-cmp.ts:132</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="fillHighlighted"></a>
+                            <code>fillHighlighted</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>true</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/components/completer-cmp.ts:129</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="initialValue"></a>
+                            <code>initialValue</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="140" class="link-to-prism">src/components/completer-cmp.ts:140</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="inputClass"></a>
+                            <code>inputClass</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/components/completer-cmp.ts:135</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="inputId"></a>
+                            <code>inputId</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                            <p>
+                              <em>Default value: </em><code>&#x27;&#x27;</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="122" class="link-to-prism">src/components/completer-cmp.ts:122</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="inputName"></a>
+                            <code>inputName</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>&#x27;&#x27;</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/components/completer-cmp.ts:121</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="matchClass"></a>
+                            <code>matchClass</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/components/completer-cmp.ts:131</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="maxChars"></a>
+                            <code>maxChars</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>MAX_CHARS</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="125" class="link-to-prism">src/components/completer-cmp.ts:125</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="minSearchLength"></a>
+                            <code>minSearchLength</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>MIN_SEARCH_LENGTH</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/components/completer-cmp.ts:124</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="openOnClick"></a>
+                            <code>openOnClick</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="138" class="link-to-prism">src/components/completer-cmp.ts:138</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="openOnFocus"></a>
+                            <code>openOnFocus</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="137" class="link-to-prism">src/components/completer-cmp.ts:137</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="overrideSuggested"></a>
+                            <code>overrideSuggested</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/components/completer-cmp.ts:126</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="pause"></a>
+                            <code>pause</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>PAUSE</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="123" class="link-to-prism">src/components/completer-cmp.ts:123</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="placeholder"></a>
+                            <code>placeholder</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>&#x27;&#x27;</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/components/completer-cmp.ts:130</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="selectOnClick"></a>
+                            <code>selectOnClick</code>
+                        </td>
+                        <td class="col-md-10">
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="139" class="link-to-prism">src/components/completer-cmp.ts:139</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="textNoResults"></a>
+                            <code>textNoResults</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="231" class="link-to-prism">src/components/completer-cmp.ts:231</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="textSearching"></a>
+                            <code>textSearching</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="239" class="link-to-prism">src/components/completer-cmp.ts:239</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="outputs">Outputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="blur"></a>
+                            <code>blur</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/components/completer-cmp.ts:145</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="click"></a>
+                            <code>click</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/components/completer-cmp.ts:146</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="focus"></a>
+                            <code>focus</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="147" class="link-to-prism">src/components/completer-cmp.ts:147</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="highlighted"></a>
+                            <code>highlighted</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/components/completer-cmp.ts:144</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="keydown"></a>
+                            <code>keydown</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="150" class="link-to-prism">src/components/completer-cmp.ts:150</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="keyup"></a>
+                            <code>keyup</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code>EventEmitter&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/components/completer-cmp.ts:149</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="opened"></a>
+                            <code>opened</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="148" class="link-to-prism">src/components/completer-cmp.ts:148</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="selected"></a>
+                            <code>selected</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="143" class="link-to-prism">src/components/completer-cmp.ts:143</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+
+
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="blur"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                blur
+                                </b>
+                                <a href="#blur"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>blur()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="303" class="link-to-prism">src/components/completer-cmp.ts:303</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="close"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                close
+                                </b>
+                                <a href="#close"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>close()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="291" class="link-to-prism">src/components/completer-cmp.ts:291</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="focus"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                focus
+                                </b>
+                                <a href="#focus"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>focus()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="295" class="link-to-prism">src/components/completer-cmp.ts:295</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="isOpen"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                isOpen
+                                </b>
+                                <a href="#isOpen"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>isOpen()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="311" class="link-to-prism">src/components/completer-cmp.ts:311</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngAfterViewChecked"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                ngAfterViewChecked
+                                </b>
+                                <a href="#ngAfterViewChecked"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>ngAfterViewChecked()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="185" class="link-to-prism">src/components/completer-cmp.ts:185</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngAfterViewInit"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                ngAfterViewInit
+                                </b>
+                                <a href="#ngAfterViewInit"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>ngAfterViewInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="179" class="link-to-prism">src/components/completer-cmp.ts:179</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngOnInit"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                ngOnInit
+                                </b>
+                                <a href="#ngOnInit"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>ngOnInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="246" class="link-to-prism">src/components/completer-cmp.ts:246</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onBlur"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                onBlur
+                                </b>
+                                <a href="#onBlur"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>onBlur()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="259" class="link-to-prism">src/components/completer-cmp.ts:259</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onChange"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                onChange
+                                </b>
+                                <a href="#onChange"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>onChange(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="283" class="link-to-prism">src/components/completer-cmp.ts:283</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>value</td>
+                                                      <td>
+                                                              <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onClick"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                onClick
+                                </b>
+                                <a href="#onClick"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>onClick(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="270" class="link-to-prism">src/components/completer-cmp.ts:270</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>event</td>
+                                                      <td>
+                                                              <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onFocus"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                onFocus
+                                </b>
+                                <a href="#onFocus"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>onFocus()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="265" class="link-to-prism">src/components/completer-cmp.ts:265</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onKeydown"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                onKeydown
+                                </b>
+                                <a href="#onKeydown"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>onKeydown(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="279" class="link-to-prism">src/components/completer-cmp.ts:279</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>event</td>
+                                                      <td>
+                                                              <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onKeyup"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                onKeyup
+                                </b>
+                                <a href="#onKeyup"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>onKeyup(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="275" class="link-to-prism">src/components/completer-cmp.ts:275</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>event</td>
+                                                      <td>
+                                                              <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onTouched"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                onTouched
+                                </b>
+                                <a href="#onTouched"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>onTouched()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="197" class="link-to-prism">src/components/completer-cmp.ts:197</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="open"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                open
+                                </b>
+                                <a href="#open"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>open()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="287" class="link-to-prism">src/components/completer-cmp.ts:287</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="registerOnChange"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                registerOnChange
+                                </b>
+                                <a href="#registerOnChange"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>registerOnChange(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="205" class="link-to-prism">src/components/completer-cmp.ts:205</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>fn</td>
+                                                      <td>
+                                                              <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="registerOnTouched"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                registerOnTouched
+                                </b>
+                                <a href="#registerOnTouched"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>registerOnTouched(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="209" class="link-to-prism">src/components/completer-cmp.ts:209</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>fn</td>
+                                                      <td>
+                                                              <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="setDisabledState"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                setDisabledState
+                                </b>
+                                <a href="#setDisabledState"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>setDisabledState(isDisabled: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="213" class="link-to-prism">src/components/completer-cmp.ts:213</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>isDisabled</td>
+                                                      <td>
+                                                              <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="writeValue"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                writeValue
+                                </b>
+                                <a href="#writeValue"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>writeValue(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="201" class="link-to-prism">src/components/completer-cmp.ts:201</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>value</td>
+                                                      <td>
+                                                              <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="inputs">
+                Properties
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="_focus"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Private</span>
+                                _focus
+                                </b>
+                                <a href="#_focus"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>_focus:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>false</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/components/completer-cmp.ts:164</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="_onChangeCallback"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Private</span>
+                                _onChangeCallback
+                                </b>
+                                <a href="#_onChangeCallback"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>_onChangeCallback:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>noop</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/components/completer-cmp.ts:163</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="_onTouchedCallback"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Private</span>
+                                _onTouchedCallback
+                                </b>
+                                <a href="#_onTouchedCallback"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>_onTouchedCallback:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>noop</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/components/completer-cmp.ts:162</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="_open"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Private</span>
+                                _open
+                                </b>
+                                <a href="#_open"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>_open:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>false</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/components/completer-cmp.ts:165</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="_textNoResults"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                _textNoResults
+                                </b>
+                                <a href="#_textNoResults"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>_textNoResults:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>TEXT_NO_RESULTS</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/components/completer-cmp.ts:159</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="_textSearching"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                _textSearching
+                                </b>
+                                <a href="#_textSearching"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>_textSearching:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>TEXT_SEARCHING</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="160" class="link-to-prism">src/components/completer-cmp.ts:160</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="completer"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                completer
+                                </b>
+                                <a href="#completer"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>completer:     <code>CtrCompleter</code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code>CtrCompleter</code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>ViewChild</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/components/completer-cmp.ts:152</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="control"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                control
+                                </b>
+                                <a href="#control"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>control:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>new FormControl(&#x27;&#x27;)</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/components/completer-cmp.ts:156</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ctrInput"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                ctrInput
+                                </b>
+                                <a href="#ctrInput"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>ctrInput:     <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>ViewChild</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="153" class="link-to-prism">src/components/completer-cmp.ts:153</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="displayNoResults"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                displayNoResults
+                                </b>
+                                <a href="#displayNoResults"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>displayNoResults:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>true</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/components/completer-cmp.ts:158</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="displaySearching"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                displaySearching
+                                </b>
+                                <a href="#displaySearching"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>displaySearching:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>true</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="157" class="link-to-prism">src/components/completer-cmp.ts:157</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="searchStr"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                searchStr
+                                </b>
+                                <a href="#searchStr"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>searchStr:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>&#x27;&#x27;</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/components/completer-cmp.ts:155</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="accessors">
+            Accessors
+        </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="value"></a>
+                            <span class="name"><b>value</b><a href="#value"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="accessor"><b>get</b><code>value()</code></span>
+                        </td>
+                    </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">src/components/completer-cmp.ts:169</a></div>
+                                    </td>
+                                </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="accessor"><b>set</b><code>value(v: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code></span>
+                        </td>
+                    </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="171" class="link-to-prism">src/components/completer-cmp.ts:171</a></div>
+                                    </td>
+                                </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="datasource"></a>
+                            <span class="name"><b>datasource</b><a href="#datasource"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="accessor"><b>set</b><code>datasource(source: )</code></span>
+                        </td>
+                    </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="218" class="link-to-prism">src/components/completer-cmp.ts:218</a></div>
+                                    </td>
+                                </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="textNoResults"></a>
+                            <span class="name"><b>textNoResults</b><a href="#textNoResults"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="accessor"><b>set</b><code>textNoResults(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
+                        </td>
+                    </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="231" class="link-to-prism">src/components/completer-cmp.ts:231</a></div>
+                                    </td>
+                                </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="textSearching"></a>
+                            <span class="name"><b>textSearching</b><a href="#textSearching"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="accessor"><b>set</b><code>textSearching(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
+                        </td>
+                    </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="239" class="link-to-prism">src/components/completer-cmp.ts:239</a></div>
+                                    </td>
+                                </tr>
+                </tbody>
+            </table>
+    </section>
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers"><code class="language-typescript">&#x27;use strict&#x27;;
+import { AfterViewChecked, ChangeDetectorRef, Component, Input, Output, EventEmitter, OnInit, ViewChild, forwardRef, AfterViewInit, ElementRef } from &#x27;@angular/core&#x27;;
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from &#x27;@angular/forms&#x27;;
+
+import { CtrCompleter } from &#x27;../directives/ctr-completer&#x27;;
+import { CompleterData } from &#x27;../services/completer-data&#x27;;
+import { CompleterService } from &#x27;../services/completer-service&#x27;;
+import { CompleterItem } from &#x27;./completer-item&#x27;;
+import { MAX_CHARS, MIN_SEARCH_LENGTH, PAUSE, TEXT_SEARCHING, TEXT_NO_RESULTS } from &#x27;../globals&#x27;;
+
+
+import &#x27;rxjs/add/operator/catch&#x27;;
+
+const noop &#x3D; () &#x3D;&gt; { };
+
+const COMPLETER_CONTROL_VALUE_ACCESSOR &#x3D; {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: forwardRef(() &#x3D;&gt; CompleterCmp),
+    multi: true
+};
+
+
+@Component({
+    selector: &#x27;ng2-completer&#x27;,
+    template: &#x60;
+        &lt;div class&#x3D;&quot;completer-holder&quot; ctrCompleter&gt;
+            &lt;input #ctrInput [attr.id]&#x3D;&quot;inputId.length &gt; 0 ? inputId : null&quot; type&#x3D;&quot;search&quot; class&#x3D;&quot;completer-input&quot; ctrInput [ngClass]&#x3D;&quot;inputClass&quot;
+                [(ngModel)]&#x3D;&quot;searchStr&quot; (ngModelChange)&#x3D;&quot;onChange($event)&quot; [attr.name]&#x3D;&quot;inputName&quot; [placeholder]&#x3D;&quot;placeholder&quot;
+                [attr.maxlength]&#x3D;&quot;maxChars&quot; [tabindex]&#x3D;&quot;fieldTabindex&quot; [disabled]&#x3D;&quot;disableInput&quot;
+                [clearSelected]&#x3D;&quot;clearSelected&quot; [clearUnselected]&#x3D;&quot;clearUnselected&quot;
+                [overrideSuggested]&#x3D;&quot;overrideSuggested&quot; [openOnFocus]&#x3D;&quot;openOnFocus&quot; [fillHighlighted]&#x3D;&quot;fillHighlighted&quot; 
+                [openOnClick]&#x3D;&quot;openOnClick&quot; [selectOnClick]&#x3D;&quot;selectOnClick&quot;
+                (blur)&#x3D;&quot;onBlur()&quot; (focus)&#x3D;&quot;onFocus()&quot; (keyup)&#x3D;&quot;onKeyup($event)&quot; (keydown)&#x3D;&quot;onKeydown($event)&quot; (click)&#x3D;&quot;onClick($event)&quot;
+                autocomplete&#x3D;&quot;off&quot; autocorrect&#x3D;&quot;off&quot; autocapitalize&#x3D;&quot;off&quot; /&gt;
+
+            &lt;div class&#x3D;&quot;completer-dropdown-holder&quot;
+                *ctrList&#x3D;&quot;dataService;
+                    minSearchLength: minSearchLength;
+                    pause: pause;
+                    autoMatch: autoMatch;
+                    initialValue: initialValue;
+                    autoHighlight: autoHighlight;
+                    displaySearching: displaySearching;
+                    let items &#x3D; results;
+                    let searchActive &#x3D; searching;
+                    let isInitialized &#x3D; searchInitialized;
+                    let isOpen &#x3D; isOpen;&quot;&gt;
+                &lt;div class&#x3D;&quot;completer-dropdown&quot; ctrDropdown *ngIf&#x3D;&quot;isInitialized &amp;&amp; isOpen &amp;&amp; (( items?.length &gt; 0|| (displayNoResults &amp;&amp; !searchActive)) || (searchActive &amp;&amp; displaySearching))&quot;&gt;
+                    &lt;div *ngIf&#x3D;&quot;searchActive &amp;&amp; displaySearching&quot; class&#x3D;&quot;completer-searching&quot;&gt;{{_textSearching}}&lt;/div&gt;
+                    &lt;div *ngIf&#x3D;&quot;!searchActive &amp;&amp; (!items || items?.length &#x3D;&#x3D;&#x3D; 0)&quot; class&#x3D;&quot;completer-no-results&quot;&gt;{{_textNoResults}}&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;completer-row-wrapper&quot; *ngFor&#x3D;&quot;let item of items; let rowIndex&#x3D;index&quot;&gt;
+                        &lt;div class&#x3D;&quot;completer-row&quot; [ctrRow]&#x3D;&quot;rowIndex&quot; [dataItem]&#x3D;&quot;item&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;item.image || item.image &#x3D;&#x3D;&#x3D; &#x27;&#x27;&quot; class&#x3D;&quot;completer-image-holder&quot;&gt;
+                                &lt;img *ngIf&#x3D;&quot;item.image !&#x3D; &#x27;&#x27;&quot; src&#x3D;&quot;{{item.image}}&quot; class&#x3D;&quot;completer-image&quot; /&gt;
+                                &lt;div *ngIf&#x3D;&quot;item.image &#x3D;&#x3D;&#x3D; &#x27;&#x27;&quot; class&#x3D;&quot;completer-image-default&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;completer-item-text&quot; [ngClass]&#x3D;&quot;{&#x27;completer-item-text-image&#x27;: item.image || item.image &#x3D;&#x3D;&#x3D; &#x27;&#x27; }&quot;&gt;
+                                &lt;completer-list-item class&#x3D;&quot;completer-title&quot; [text]&#x3D;&quot;item.title&quot; [matchClass]&#x3D;&quot;matchClass&quot; [searchStr]&#x3D;&quot;searchStr&quot; [type]&#x3D;&quot;&#x27;title&#x27;&quot;&gt;&lt;/completer-list-item&gt;
+                                &lt;completer-list-item *ngIf&#x3D;&quot;item.description &amp;&amp; item.description !&#x3D; &#x27;&#x27;&quot; class&#x3D;&quot;completer-description&quot; [text]&#x3D;&quot;item.description&quot;
+                                    [matchClass]&#x3D;&quot;matchClass&quot; [searchStr]&#x3D;&quot;searchStr&quot; [type]&#x3D;&quot;&#x27;description&#x27;&quot;&gt;
+                                &lt;/completer-list-item&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &#x60;,
+    styles: [&#x60;
+    .completer-dropdown {
+        border-color: #ececec;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 2px;
+        width: 250px;
+        padding: 6px;
+        cursor: pointer;
+        z-index: 9999;
+        position: absolute;
+        margin-top: -6px;
+        background-color: #ffffff;
+    }
+
+    .completer-row {
+        padding: 5px;
+        color: #000000;
+        margin-bottom: 4px;
+        clear: both;
+        display: inline-block;
+        width: 103%;
+    }
+
+    .completer-selected-row {
+        background-color: lightblue;
+        color: #ffffff;
+    }
+
+    .completer-description {
+        font-size: 14px;
+    }
+
+    .completer-image-default {
+        width: 16px;
+        height: 16px;
+        background-image: url(&quot;demo/res/img/default.png&quot;);
+    }
+
+    .completer-image-holder {
+        float: left;
+        width: 10%;
+    }
+    .completer-item-text-image {
+        float: right;
+        width: 90%;
+    }
+    &#x60;],
+    providers: [COMPLETER_CONTROL_VALUE_ACCESSOR] 
+})
+export class CompleterCmp implements OnInit, ControlValueAccessor, AfterViewChecked, AfterViewInit {
+    @Input() public dataService: CompleterData;
+    @Input() public inputName &#x3D; &#x27;&#x27;;
+    @Input() public inputId: string &#x3D; &#x27;&#x27;;
+    @Input() public pause &#x3D; PAUSE;
+    @Input() public minSearchLength &#x3D; MIN_SEARCH_LENGTH;
+    @Input() public maxChars &#x3D; MAX_CHARS;
+    @Input() public overrideSuggested &#x3D; false;
+    @Input() public clearSelected &#x3D; false;
+    @Input() public clearUnselected &#x3D; false;
+    @Input() public fillHighlighted &#x3D; true;
+    @Input() public placeholder &#x3D; &#x27;&#x27;;
+    @Input() public matchClass: string;
+    @Input() public fieldTabindex: number;
+    @Input() public autoMatch &#x3D; false;
+    @Input() public disableInput &#x3D; false;
+    @Input() public inputClass: string;
+    @Input() public autofocus &#x3D; false;
+    @Input() public openOnFocus &#x3D; false;
+    @Input() public openOnClick &#x3D; false;
+    @Input() public selectOnClick &#x3D; false;
+    @Input() public initialValue: any;
+    @Input() public autoHighlight &#x3D; false;
+
+    @Output() public selected &#x3D; new EventEmitter&lt;CompleterItem&gt;();
+    @Output() public highlighted &#x3D; new EventEmitter&lt;CompleterItem&gt;();
+    @Output(&#x27;blur&#x27;) public blurEvent &#x3D; new EventEmitter&lt;void&gt;();
+    @Output() public click &#x3D; new EventEmitter&lt;void&gt;();
+    @Output(&#x27;focus&#x27;) public focusEvent &#x3D; new EventEmitter&lt;void&gt;();
+    @Output() public opened &#x3D; new EventEmitter&lt;boolean&gt;();
+    @Output() public keyup: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+    @Output() public keydown: EventEmitter&lt;any&gt; &#x3D; new EventEmitter();
+
+    @ViewChild(CtrCompleter) public completer: CtrCompleter;
+    @ViewChild(&#x27;ctrInput&#x27;) public ctrInput: ElementRef;
+
+    public searchStr &#x3D; &#x27;&#x27;;
+    public control &#x3D; new FormControl(&#x27;&#x27;);
+    public displaySearching &#x3D; true;
+    public displayNoResults &#x3D; true;
+    public _textNoResults &#x3D; TEXT_NO_RESULTS;
+    public _textSearching &#x3D; TEXT_SEARCHING;
+
+    private _onTouchedCallback: () &#x3D;&gt; void &#x3D; noop;
+    private _onChangeCallback: (_: any) &#x3D;&gt; void &#x3D; noop;
+    private _focus: boolean &#x3D; false;
+    private _open: boolean &#x3D; false;
+
+    constructor(private completerService: CompleterService, private cdr: ChangeDetectorRef) { }
+
+    get value(): any { return this.searchStr; };
+
+    set value(v: any) {
+        if (v !&#x3D;&#x3D; this.searchStr) {
+            this.searchStr &#x3D; v;
+        }
+        // Propagate the change in any case
+        this._onChangeCallback(v);
+    }
+
+    public ngAfterViewInit() {
+        if (this.autofocus) {
+            this._focus &#x3D; true;
+        }
+    }
+
+    public ngAfterViewChecked(): void {
+        if (this._focus) {
+            setTimeout(
+                () &#x3D;&gt; {
+                    this.ctrInput.nativeElement.focus();
+                    this._focus &#x3D; false;
+                },
+                0
+            );
+        }
+    }
+
+    public onTouched() {
+        this._onTouchedCallback();
+    }
+
+    public writeValue(value: any) {
+        this.searchStr &#x3D; value;
+    }
+
+    public registerOnChange(fn: any) {
+        this._onChangeCallback &#x3D; fn;
+    }
+
+    public registerOnTouched(fn: any) {
+        this._onTouchedCallback &#x3D; fn;
+    }
+
+    public setDisabledState(isDisabled: boolean): void {
+        this.disableInput &#x3D; isDisabled;
+    }
+
+    @Input()
+    public set datasource(source: CompleterData | string | Array&lt;any&gt;) {
+        if (source) {
+            if (source instanceof Array) {
+                this.dataService &#x3D; this.completerService.local(source);
+            } else if (typeof (source) &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
+                this.dataService &#x3D; this.completerService.remote(source);
+            } else {
+                this.dataService &#x3D; source;
+            }
+        }
+    }
+
+    @Input()
+    public set textNoResults(text: string) {
+        if (this._textNoResults !&#x3D; text) {
+            this._textNoResults &#x3D; text;
+            this.displayNoResults &#x3D; !!this._textNoResults &amp;&amp; this._textNoResults !&#x3D;&#x3D; &#x27;false&#x27;;
+        }
+    }
+
+    @Input()
+    public set textSearching(text: string) {
+        if (this._textSearching !&#x3D; text) {
+            this._textSearching &#x3D; text;
+            this.displaySearching &#x3D; !!this._textSearching &amp;&amp; this._textSearching !&#x3D;&#x3D; &#x27;false&#x27;;
+        }
+    }
+
+    public ngOnInit() {
+        this.completer.selected.subscribe((item: CompleterItem) &#x3D;&gt; {
+            this.selected.emit(item);
+        });
+        this.completer.highlighted.subscribe((item: CompleterItem) &#x3D;&gt; {
+            this.highlighted.emit(item);
+        });
+        this.completer.opened.subscribe((isOpen: boolean) &#x3D;&gt; {
+            this._open &#x3D; isOpen;
+            this.opened.emit(isOpen);
+        });
+    }
+
+    public onBlur() {
+        this.blurEvent.emit();
+        this.onTouched();
+        this.cdr.detectChanges();
+    }
+
+    public onFocus() {
+        this.focusEvent.emit();
+        this.onTouched();
+    }
+
+    public onClick(event: any) {
+        this.click.emit(event);
+        this.onTouched();
+    }
+
+    public onKeyup(event: any) {
+        this.keyup.emit(event);
+    }
+
+    public onKeydown(event: any) {
+        this.keydown.emit(event);
+    }
+
+    public onChange(value: string) {
+        this.value &#x3D; value;
+    }
+
+    public open() {
+        this.completer.open();
+    }
+
+    public close() {
+        this.completer.clear();
+    }
+
+    public focus(): void {
+        if (this.ctrInput) {
+            this.ctrInput.nativeElement.focus();
+        } else {
+            this._focus &#x3D; true;
+        }
+    }
+
+    public blur(): void {
+        if (this.ctrInput) {
+            this.ctrInput.nativeElement.blur();
+        } else {
+            this._focus &#x3D; false;
+        }
+    }
+
+    public isOpen() {
+        return this._open;
+    }
+}
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade" id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="completer-holder" ctrCompleter>    <input #ctrInput [attr.id]="inputId.length > 0 ? inputId : null" type="search" class="completer-input" ctrInput [ngClass]="inputClass"        [(ngModel)]="searchStr" (ngModelChange)="onChange($event)" [attr.name]="inputName" [placeholder]="placeholder"        [attr.maxlength]="maxChars" [tabindex]="fieldTabindex" [disabled]="disableInput"        [clearSelected]="clearSelected" [clearUnselected]="clearUnselected"        [overrideSuggested]="overrideSuggested" [openOnFocus]="openOnFocus" [fillHighlighted]="fillHighlighted"        [openOnClick]="openOnClick" [selectOnClick]="selectOnClick"        (blur)="onBlur()" (focus)="onFocus()" (keyup)="onKeyup($event)" (keydown)="onKeydown($event)" (click)="onClick($event)"        autocomplete="off" autocorrect="off" autocapitalize="off" />    <div class="completer-dropdown-holder"        *ctrList="dataService;            minSearchLength: minSearchLength;            pause: pause;            autoMatch: autoMatch;            initialValue: initialValue;            autoHighlight: autoHighlight;            displaySearching: displaySearching;            let items = results;            let searchActive = searching;            let isInitialized = searchInitialized;            let isOpen = isOpen;">        <div class="completer-dropdown" ctrDropdown *ngIf="isInitialized && isOpen && (( items?.length > 0|| (displayNoResults && !searchActive)) || (searchActive && displaySearching))">            <div *ngIf="searchActive && displaySearching" class="completer-searching">{{_textSearching}}</div>            <div *ngIf="!searchActive && (!items || items?.length === 0)" class="completer-no-results">{{_textNoResults}}</div>            <div class="completer-row-wrapper" *ngFor="let item of items; let rowIndex=index">                <div class="completer-row" [ctrRow]="rowIndex" [dataItem]="item">                    <div *ngIf="item.image || item.image === \'\'" class="completer-image-holder">                        <img *ngIf="item.image != \'\'" src="{{item.image}}" class="completer-image" />                        <div *ngIf="item.image === \'\'" class="completer-image-default"></div>                    </div>                    <div class="completer-item-text" [ngClass]="{\'completer-item-text-image\': item.image || item.image === \'\' }">                        <completer-list-item class="completer-title" [text]="item.title" [matchClass]="matchClass" [searchStr]="searchStr" [type]="\'title\'"></completer-list-item>                        <completer-list-item *ngIf="item.description && item.description != \'\'" class="completer-description" [text]="item.description"                            [matchClass]="matchClass" [searchStr]="searchStr" [type]="\'description\'">                        </completer-list-item>                    </div>                </div>            </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app'},{'name': 'CompleterCmp', 'selector': 'ng2-completer'},{'name': 'CompleterListItemCmp', 'selector': 'completer-list-item'}];
+    var DIRECTIVES = [{'name': 'CtrCompleter', 'selector': '[ctrCompleter]'},{'name': 'CtrDropdown', 'selector': '[ctrDropdown]'},{'name': 'CtrInput', 'selector': '[ctrInput]'},{'name': 'CtrList', 'selector': '[ctrList]'},{'name': 'CtrRow', 'selector': '[ctrRow]'}];
+    var ACTUAL_COMPONENT = {'name': 'CompleterCmp'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>

@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CompleterCmp } from './components/completer-cmp';
 import { CompleterListItemCmp } from './components/completer-list-item-cmp';
 import { CompleterService } from './services/completer-service';
+import { NeoCompleterService } from './neo.completer.service';
 
 import { localDataFactory, remoteDataFactory,
    LocalDataFactoryProvider, RemoteDataFactoryProvider } from './services/completer-data-factory';
@@ -29,12 +30,15 @@ export * from './directives/ctr-list';
 export * from './directives/ctr-row';
 export * from './services/completer-data';
 export * from './services/completer-service';
+export * from './neo.completer.service';
 
 export {CompleterData} from './services/completer-data';
 export {CompleterItem} from './components/completer-item';
 export {LocalData} from './services/local-data';
 export {RemoteData} from './services/remote-data';
 export {CompleterBaseData} from './services/completer-base-data';
+
+
 
 @NgModule({
   imports: [
@@ -58,7 +62,7 @@ export {CompleterBaseData} from './services/completer-base-data';
     CtrDropdown,
     CtrInput,
     CtrList,
-    CtrRow,
+    CtrRow
   ]
 })
 export class NeoCompleterModule {
@@ -69,7 +73,6 @@ export class NeoCompleterModule {
         CompleterService,
         LocalDataFactoryProvider,
         RemoteDataFactoryProvider,
-
       ]
     };
   }

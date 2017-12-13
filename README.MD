@@ -1,4 +1,5 @@
 # ng-neo-completer
+Autocomplete with object instead of strings
 
 ## Installation
 
@@ -16,7 +17,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
+// Import library
 import { NeoCompleterModule } from 'ng-neo-completer';
 
 @NgModule({
@@ -44,13 +45,18 @@ import { NeoCompleterModule } from 'ng-neo-completer';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
+    // Specify library as an import
     NeoCompleterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class ChildModule { }
+
+// Import NeoCompleterService and use it with DTO
+import { NeoCompleterService } from 'ng-neo-completer';
+
+protected concreteCompleterService: NeoCompleterService<ConcreteDTO>;
 ```
 
 ## License

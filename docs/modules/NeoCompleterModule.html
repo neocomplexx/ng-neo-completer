@@ -1,0 +1,921 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ng-neo-completer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ng-neo-completer</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">ng-neo-completer</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                        <a href="../license.html"
+                                    >
+                                        <span class="fa fa-file-text-o"></span>LICENSE
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/NeoCompleterModule.html"  data-type="entity-link" class="active" >NeoCompleterModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/CompleterCmp.html" >CompleterCmp</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/CompleterListItemCmp.html" >CompleterListItemCmp</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/CtrCompleter.html" >CtrCompleter</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/CtrDropdown.html" >CtrDropdown</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/CtrInput.html" >CtrInput</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/CtrList.html" >CtrList</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/CtrRow.html" >CtrRow</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/CompleterBaseData.html" >CompleterBaseData</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/CtrListContext.html" >CtrListContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/CtrRowItem.html" >CtrRowItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/NeoCompleterService.html" >NeoCompleterService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/RemoteData.html" >RemoteData</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/CompleterService.html" >CompleterService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/LocalData.html" >LocalData</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/CompleterData.html" >CompleterData</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/CompleterDropdown.html" >CompleterDropdown</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/CompleterItem.html" >CompleterItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/CompleterList.html" >CompleterList</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/CtrRowElement.html" >CtrRowElement</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/MatchPart.html" >MatchPart</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/functions.html" data-type="entity-link" >Functions</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">ng-neo-completer</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                               <a href="../license.html"
+                                           >
+                                               <span class="fa fa-file-text-o"></span>LICENSE
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/NeoCompleterModule.html"  data-type="entity-link" class="active" >NeoCompleterModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/CompleterCmp.html" >CompleterCmp</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/CompleterListItemCmp.html" >CompleterListItemCmp</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/CtrCompleter.html" >CtrCompleter</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/CtrDropdown.html" >CtrDropdown</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/CtrInput.html" >CtrInput</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/CtrList.html" >CtrList</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/CtrRow.html" >CtrRow</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/CompleterBaseData.html" >CompleterBaseData</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/CtrListContext.html" >CtrListContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/CtrRowItem.html" >CtrRowItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/NeoCompleterService.html" >NeoCompleterService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/RemoteData.html" >RemoteData</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/CompleterService.html" >CompleterService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/LocalData.html" >LocalData</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/CompleterData.html" >CompleterData</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/CompleterDropdown.html" >CompleterDropdown</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/CompleterItem.html" >CompleterItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/CompleterList.html" >CompleterList</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/CtrRowElement.html" >CtrRowElement</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/MatchPart.html" >MatchPart</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/functions.html" data-type="entity-link" >Functions</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content module">
+                   <div class="content-data">
+
+
+
+<ol class="breadcrumb">
+  <li>Modules</li>
+  <li>NeoCompleterModule</li>
+</ol>
+
+      <div class="text-center module-graph-container">
+          <div id="module-graph-svg">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: dependencies Pages: 1 -->
+<svg width="807pt" height="284pt"
+ viewBox="0.00 0.00 807.00 284.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 280)">
+<title>dependencies</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-280 803,-280 803,4 -4,4"/>
+<text text-anchor="start" x="378.5091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
+<polygon fill="#ffffb3" stroke="transparent" points="165.5,-10 165.5,-30 185.5,-30 185.5,-10 165.5,-10"/>
+<text text-anchor="start" x="189.129" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
+<polygon fill="#8dd3c7" stroke="transparent" points="278.5,-10 278.5,-30 298.5,-30 298.5,-10 278.5,-10"/>
+<text text-anchor="start" x="302.2251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
+<polygon fill="#80b1d3" stroke="transparent" points="364.5,-10 364.5,-30 384.5,-30 384.5,-10 364.5,-10"/>
+<text text-anchor="start" x="388.2812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
+<polygon fill="#fdb462" stroke="transparent" points="461.5,-10 461.5,-30 481.5,-30 481.5,-10 461.5,-10"/>
+<text text-anchor="start" x="485.1732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
+<polygon fill="#fb8072" stroke="transparent" points="557.5,-10 557.5,-30 577.5,-30 577.5,-10 557.5,-10"/>
+<text text-anchor="start" x="581.2258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
+<g id="clust1" class="cluster">
+<title>cluster_NeoCompleterModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-70 8,-268 791,-268 791,-70 8,-70"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_NeoCompleterModule_declarations</title>
+<polygon fill="none" stroke="#000000" points="16,-78 16,-130 758,-130 758,-78 16,-78"/>
+</g>
+<g id="clust11" class="cluster">
+<title>cluster_NeoCompleterModule_exports</title>
+<polygon fill="none" stroke="#000000" points="16,-208 16,-260 783,-260 783,-208 16,-208"/>
+</g>
+<!-- CompleterListItemCmp -->
+<g id="node1" class="node">
+<title>CompleterListItemCmp</title>
+<polygon fill="#ffffb3" stroke="#000000" points="749.7604,-122 600.2396,-122 600.2396,-86 749.7604,-86 749.7604,-122"/>
+<text text-anchor="middle" x="675" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CompleterListItemCmp</text>
+</g>
+<!-- NeoCompleterModule -->
+<g id="node8" class="node">
+<title>NeoCompleterModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="392.9692,-187 389.9692,-191 368.9692,-191 365.9692,-187 251.0308,-187 251.0308,-151 392.9692,-151 392.9692,-187"/>
+<text text-anchor="middle" x="322" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">NeoCompleterModule</text>
+</g>
+<!-- CompleterListItemCmp&#45;&gt;NeoCompleterModule -->
+<g id="edge1" class="edge">
+<title>CompleterListItemCmp&#45;&gt;NeoCompleterModule</title>
+<path fill="none" stroke="#000000" d="M625.375,-122.2667C625.375,-140.5552 625.375,-166 625.375,-166 625.375,-166 403.128,-166 403.128,-166"/>
+<polygon fill="#000000" stroke="#000000" points="403.128,-162.5001 393.128,-166 403.1279,-169.5001 403.128,-162.5001"/>
+</g>
+<!-- CtrCompleter -->
+<g id="node2" class="node">
+<title>CtrCompleter</title>
+<polygon fill="#ffffb3" stroke="#000000" points="582.486,-122 489.514,-122 489.514,-86 582.486,-86 582.486,-122"/>
+<text text-anchor="middle" x="536" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrCompleter</text>
+</g>
+<!-- CtrCompleter&#45;&gt;NeoCompleterModule -->
+<g id="edge2" class="edge">
+<title>CtrCompleter&#45;&gt;NeoCompleterModule</title>
+<path fill="none" stroke="#000000" d="M493.4385,-122.0091C493.4385,-138.0494 493.4385,-159 493.4385,-159 493.4385,-159 403.216,-159 403.216,-159"/>
+<polygon fill="#000000" stroke="#000000" points="403.216,-155.5001 393.216,-159 403.2159,-162.5001 403.216,-155.5001"/>
+</g>
+<!-- CtrDropdown -->
+<g id="node3" class="node">
+<title>CtrDropdown</title>
+<polygon fill="#ffffb3" stroke="#000000" points="471.7619,-122 378.2381,-122 378.2381,-86 471.7619,-86 471.7619,-122"/>
+<text text-anchor="middle" x="425" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrDropdown</text>
+</g>
+<!-- CtrDropdown&#45;&gt;NeoCompleterModule -->
+<g id="edge3" class="edge">
+<title>CtrDropdown&#45;&gt;NeoCompleterModule</title>
+<path fill="none" stroke="#000000" d="M385.5519,-122.1061C385.5519,-122.1061 385.5519,-140.991 385.5519,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="382.052,-140.9909 385.5519,-150.991 389.052,-140.991 382.052,-140.9909"/>
+</g>
+<!-- CtrInput -->
+<g id="node4" class="node">
+<title>CtrInput</title>
+<polygon fill="#ffffb3" stroke="#000000" points="359.9405,-122 296.0595,-122 296.0595,-86 359.9405,-86 359.9405,-122"/>
+<text text-anchor="middle" x="328" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrInput</text>
+</g>
+<!-- CtrInput&#45;&gt;NeoCompleterModule -->
+<g id="edge4" class="edge">
+<title>CtrInput&#45;&gt;NeoCompleterModule</title>
+<path fill="none" stroke="#000000" d="M328,-122.1061C328,-122.1061 328,-140.991 328,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="324.5001,-140.9909 328,-150.991 331.5001,-140.991 324.5001,-140.9909"/>
+</g>
+<!-- CtrList -->
+<g id="node5" class="node">
+<title>CtrList</title>
+<polygon fill="#ffffb3" stroke="#000000" points="277.6672,-122 222.3328,-122 222.3328,-86 277.6672,-86 277.6672,-122"/>
+<text text-anchor="middle" x="250" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrList</text>
+</g>
+<!-- CtrList&#45;&gt;NeoCompleterModule -->
+<g id="edge5" class="edge">
+<title>CtrList&#45;&gt;NeoCompleterModule</title>
+<path fill="none" stroke="#000000" d="M264.4243,-122.1061C264.4243,-122.1061 264.4243,-140.991 264.4243,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="260.9243,-140.9909 264.4243,-150.991 267.9243,-140.991 260.9243,-140.9909"/>
+</g>
+<!-- CtrRow -->
+<g id="node6" class="node">
+<title>CtrRow</title>
+<polygon fill="#ffffb3" stroke="#000000" points="204.3319,-122 143.6681,-122 143.6681,-86 204.3319,-86 204.3319,-122"/>
+<text text-anchor="middle" x="174" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrRow</text>
+</g>
+<!-- CtrRow&#45;&gt;NeoCompleterModule -->
+<g id="edge6" class="edge">
+<title>CtrRow&#45;&gt;NeoCompleterModule</title>
+<path fill="none" stroke="#000000" d="M193.348,-122.0091C193.348,-138.0494 193.348,-159 193.348,-159 193.348,-159 240.9008,-159 240.9008,-159"/>
+<polygon fill="#000000" stroke="#000000" points="240.9008,-162.5001 250.9008,-159 240.9008,-155.5001 240.9008,-162.5001"/>
+</g>
+<!-- CompleterCmp -->
+<g id="node7" class="node">
+<title>CompleterCmp</title>
+<polygon fill="#ffffb3" stroke="#000000" points="126.3259,-122 23.6741,-122 23.6741,-86 126.3259,-86 126.3259,-122"/>
+<text text-anchor="middle" x="75" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CompleterCmp</text>
+</g>
+<!-- CompleterCmp&#45;&gt;NeoCompleterModule -->
+<g id="edge7" class="edge">
+<title>CompleterCmp&#45;&gt;NeoCompleterModule</title>
+<path fill="none" stroke="#000000" d="M115.7898,-122.2667C115.7898,-140.5552 115.7898,-166 115.7898,-166 115.7898,-166 240.7454,-166 240.7454,-166"/>
+<polygon fill="#000000" stroke="#000000" points="240.7454,-169.5001 250.7454,-166 240.7454,-162.5001 240.7454,-169.5001"/>
+</g>
+<!-- CompleterCmp  -->
+<g id="node9" class="node">
+<title>CompleterCmp </title>
+<polygon fill="#fb8072" stroke="#000000" points="774.8255,-252 669.1745,-252 669.1745,-216 774.8255,-216 774.8255,-252"/>
+<text text-anchor="middle" x="722" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">CompleterCmp </text>
+</g>
+<!-- NeoCompleterModule&#45;&gt;CompleterCmp  -->
+<g id="edge8" class="edge">
+<title>NeoCompleterModule&#45;&gt;CompleterCmp </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M393.0705,-173C504.9337,-173 709.4837,-173 709.4837,-173 709.4837,-173 709.4837,-205.698 709.4837,-205.698"/>
+<polygon fill="#000000" stroke="#000000" points="705.9838,-205.698 709.4837,-215.698 712.9838,-205.698 705.9838,-205.698"/>
+</g>
+<!-- CompleterListItemCmp  -->
+<g id="node10" class="node">
+<title>CompleterListItemCmp </title>
+<polygon fill="#fb8072" stroke="#000000" points="650.7604,-252 497.2396,-252 497.2396,-216 650.7604,-216 650.7604,-252"/>
+<text text-anchor="middle" x="574" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">CompleterListItemCmp </text>
+</g>
+<!-- NeoCompleterModule&#45;&gt;CompleterListItemCmp  -->
+<g id="edge9" class="edge">
+<title>NeoCompleterModule&#45;&gt;CompleterListItemCmp </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M393.0574,-180C456.654,-180 539.9315,-180 539.9315,-180 539.9315,-180 539.9315,-205.7181 539.9315,-205.7181"/>
+<polygon fill="#000000" stroke="#000000" points="536.4315,-205.718 539.9315,-215.7181 543.4315,-205.7181 536.4315,-205.718"/>
+</g>
+<!-- CtrCompleter  -->
+<g id="node11" class="node">
+<title>CtrCompleter </title>
+<polygon fill="#fb8072" stroke="#000000" points="479.4872,-252 382.5128,-252 382.5128,-216 479.4872,-216 479.4872,-252"/>
+<text text-anchor="middle" x="431" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrCompleter </text>
+</g>
+<!-- NeoCompleterModule&#45;&gt;CtrCompleter  -->
+<g id="edge10" class="edge">
+<title>NeoCompleterModule&#45;&gt;CtrCompleter </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M387.8708,-187.1061C387.8708,-187.1061 387.8708,-205.991 387.8708,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="384.3709,-205.9909 387.8708,-215.991 391.3709,-205.991 384.3709,-205.9909"/>
+</g>
+<!-- CtrDropdown  -->
+<g id="node12" class="node">
+<title>CtrDropdown </title>
+<polygon fill="#fb8072" stroke="#000000" points="364.762,-252 267.238,-252 267.238,-216 364.762,-216 364.762,-252"/>
+<text text-anchor="middle" x="316" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrDropdown </text>
+</g>
+<!-- NeoCompleterModule&#45;&gt;CtrDropdown  -->
+<g id="edge11" class="edge">
+<title>NeoCompleterModule&#45;&gt;CtrDropdown </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M316,-187.1061C316,-187.1061 316,-205.991 316,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="312.5001,-205.9909 316,-215.991 319.5001,-205.991 312.5001,-205.9909"/>
+</g>
+<!-- CtrInput  -->
+<g id="node13" class="node">
+<title>CtrInput </title>
+<polygon fill="#fb8072" stroke="#000000" points="249.439,-252 182.561,-252 182.561,-216 249.439,-216 249.439,-252"/>
+<text text-anchor="middle" x="216" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrInput </text>
+</g>
+<!-- NeoCompleterModule&#45;&gt;CtrInput  -->
+<g id="edge12" class="edge">
+<title>NeoCompleterModule&#45;&gt;CtrInput </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M259.1923,-187.1061C259.1923,-206.3391 259.1923,-234 259.1923,-234 259.1923,-234 258.2337,-234 258.2337,-234"/>
+<polygon fill="#000000" stroke="#000000" points="259.6066,-230.5001 249.6065,-234 259.6065,-237.5001 259.6066,-230.5001"/>
+</g>
+<!-- CtrList  -->
+<g id="node14" class="node">
+<title>CtrList </title>
+<polygon fill="#fb8072" stroke="#000000" points="164.6664,-252 105.3336,-252 105.3336,-216 164.6664,-216 164.6664,-252"/>
+<text text-anchor="middle" x="135" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrList </text>
+</g>
+<!-- NeoCompleterModule&#45;&gt;CtrList  -->
+<g id="edge13" class="edge">
+<title>NeoCompleterModule&#45;&gt;CtrList </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M250.8414,-180C205.1099,-180 154.2088,-180 154.2088,-180 154.2088,-180 154.2088,-205.7181 154.2088,-205.7181"/>
+<polygon fill="#000000" stroke="#000000" points="150.7089,-205.718 154.2088,-215.7181 157.7089,-205.7181 150.7089,-205.718"/>
+</g>
+<!-- CtrRow  -->
+<g id="node15" class="node">
+<title>CtrRow </title>
+<polygon fill="#fb8072" stroke="#000000" points="87.8312,-252 24.1688,-252 24.1688,-216 87.8312,-216 87.8312,-252"/>
+<text text-anchor="middle" x="56" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">CtrRow </text>
+</g>
+<!-- NeoCompleterModule&#45;&gt;CtrRow  -->
+<g id="edge14" class="edge">
+<title>NeoCompleterModule&#45;&gt;CtrRow </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M250.7169,-173C171.9245,-173 56,-173 56,-173 56,-173 56,-205.698 56,-205.698"/>
+<polygon fill="#000000" stroke="#000000" points="52.5001,-205.698 56,-215.698 59.5001,-205.698 52.5001,-205.698"/>
+</g>
+</g>
+</svg>
+
+          </div>
+          <i id="fullscreen" class="fa fa-expand module-graph-fullscreen-btn" aria-hidden="true"></i>
+          <div class="btn-group">
+              <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
+              <button id="reset" class="btn btn-default btn-sm">Reset</button>
+              <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
+          </div>
+      </div>
+      <script src="../js/libs/svg-pan-zoom.min.js"></script>
+      <script src="../js/svg-pan-zoom.controls.js"></script>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/index.ts</code>
+        </p>
+
+
+        <div class="container-fluid module">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank" title="Official documentation about module declarations"><span class="fa fa-info-circle"></span></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="../components/CompleterListItemCmp.html">CompleterListItemCmp</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../directives/CtrCompleter.html">CtrCompleter</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../directives/CtrDropdown.html">CtrDropdown</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../directives/CtrInput.html">CtrInput</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../directives/CtrList.html">CtrList</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../directives/CtrRow.html">CtrRow</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/CompleterCmp.html">CompleterCmp</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Exports<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                    <a href="../components/CompleterCmp.html" >CompleterCmp</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/CompleterListItemCmp.html" >CompleterListItemCmp</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../directives/CtrCompleter.html" >CtrCompleter</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../directives/CtrDropdown.html" >CtrDropdown</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../directives/CtrInput.html" >CtrInput</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../directives/CtrList.html" >CtrList</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../directives/CtrRow.html" >CtrRow</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers"><code class="language-typescript">import { NgModule, ModuleWithProviders } from &#x27;@angular/core&#x27;;
+import { FormsModule } from &#x27;@angular/forms&#x27;;
+import { CommonModule } from &#x27;@angular/common&#x27;;
+import { HttpClientModule } from &#x27;@angular/common/http&#x27;;
+
+import { CompleterCmp } from &#x27;./components/completer-cmp&#x27;;
+import { CompleterListItemCmp } from &#x27;./components/completer-list-item-cmp&#x27;;
+import { CompleterService } from &#x27;./services/completer-service&#x27;;
+import { NeoCompleterService } from &#x27;./neo.completer.service&#x27;;
+
+import { localDataFactory, remoteDataFactory,
+   LocalDataFactoryProvider, RemoteDataFactoryProvider } from &#x27;./services/completer-data-factory&#x27;;
+import { CtrCompleter } from &#x27;./directives/ctr-completer&#x27;;
+import { CtrDropdown } from &#x27;./directives/ctr-dropdown&#x27;;
+import { CtrInput } from &#x27;./directives/ctr-input&#x27;;
+import { CtrList } from &#x27;./directives/ctr-list&#x27;;
+import { CtrRow } from &#x27;./directives/ctr-row&#x27;;
+import {CompleterData} from &#x27;./services/completer-data&#x27;;
+import {CompleterItem} from &#x27;./components/completer-item&#x27;; 
+import {LocalData} from &#x27;./services/local-data&#x27;;
+import {RemoteData} from &#x27;./services/remote-data&#x27;;
+import {CompleterBaseData} from &#x27;./services/completer-base-data&#x27;;
+
+export * from &#x27;./components/completer-cmp&#x27;;
+export * from &#x27;./components/completer-list-item-cmp&#x27;;
+export * from &#x27;./directives/ctr-completer&#x27;;
+export * from &#x27;./directives/ctr-dropdown&#x27;;
+export * from &#x27;./directives/ctr-input&#x27;;
+export * from &#x27;./directives/ctr-list&#x27;;
+export * from &#x27;./directives/ctr-row&#x27;;
+export * from &#x27;./services/completer-data&#x27;;
+export * from &#x27;./services/completer-service&#x27;;
+export * from &#x27;./neo.completer.service&#x27;;
+
+export {CompleterData} from &#x27;./services/completer-data&#x27;;
+export {CompleterItem} from &#x27;./components/completer-item&#x27;;
+export {LocalData} from &#x27;./services/local-data&#x27;;
+export {RemoteData} from &#x27;./services/remote-data&#x27;;
+export {CompleterBaseData} from &#x27;./services/completer-base-data&#x27;;
+
+
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    HttpClientModule
+  ],
+  declarations: [
+    CompleterListItemCmp,
+    CtrCompleter,
+    CtrDropdown,
+    CtrInput,
+    CtrList,
+    CtrRow,
+    CompleterCmp,
+  ],
+  exports: [
+    CompleterCmp,
+    CompleterListItemCmp,
+    CtrCompleter,
+    CtrDropdown,
+    CtrInput,
+    CtrList,
+    CtrRow
+  ]
+})
+export class NeoCompleterModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: NeoCompleterModule,
+      providers: [
+        CompleterService,
+        LocalDataFactoryProvider,
+        RemoteDataFactoryProvider,
+      ]
+    };
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>
