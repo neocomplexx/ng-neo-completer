@@ -66,54 +66,7 @@ const COMPLETER_CONTROL_VALUE_ACCESSOR = {
             </div>
         </div>
     `,
-    styles: [`
-    .completer-dropdown {
-        border-color: #ececec;
-        border-width: 1px;
-        border-style: solid;
-        border-radius: 2px;
-        width: 250px;
-        padding: 6px;
-        cursor: pointer;
-        z-index: 9999;
-        position: absolute;
-        margin-top: -6px;
-        background-color: #ffffff;
-    }
-
-    .completer-row {
-        padding: 5px;
-        color: #000000;
-        margin-bottom: 4px;
-        clear: both;
-        display: inline-block;
-        width: 103%;
-    }
-
-    .completer-selected-row {
-        background-color: lightblue;
-        color: #ffffff;
-    }
-
-    .completer-description {
-        font-size: 14px;
-    }
-
-    .completer-image-default {
-        width: 16px;
-        height: 16px;
-        background-image: url("demo/res/img/default.png");
-    }
-
-    .completer-image-holder {
-        float: left;
-        width: 10%;
-    }
-    .completer-item-text-image {
-        float: right;
-        width: 90%;
-    }
-    `],
+    styleUrls: ['completer-cmp.scss'],
     providers: [COMPLETER_CONTROL_VALUE_ACCESSOR] 
 })
 export class CompleterCmp implements OnInit, ControlValueAccessor, AfterViewChecked, AfterViewInit {
